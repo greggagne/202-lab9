@@ -38,7 +38,7 @@ public class Queens {
 	  /* TO BE IMPLEMENTED */
   }
   
-  /** Solves Eight Queens problem.
+  /** Solves N-Queens problem.
     * Precondition: Empty game board  
     * Postcondition: If a solution is found, each 
     * row of the board contains one queen where
@@ -49,7 +49,7 @@ public class Queens {
     */
   public boolean solveQueensProblem() {
 	  // we begin from row 0
-    if (placeQueens(0) == true) 
+    if (NQueens(0) == true)
       return true;
     else {
     	// no solution found, so return failure
@@ -75,7 +75,7 @@ public class Queens {
    * @param row
    * @return
    */
-  private boolean placeQueens(int row) {
+  private boolean NQueens(int row) {
     if (row >= boardSize) {
       return true;  // Solution found: entire board has been filled!
     } 
